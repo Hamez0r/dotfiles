@@ -35,5 +35,15 @@ else
     echo ".vimrc.bundles file not found. You will be missing vim plugins"
 fi
 
+if [[ -f .tmux.conf ]]; then
+    cp .tmux.conf $HOME/
+else
+    echo ".tmux.conf file not found"
+fi
+
+# Install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 echo "Install completed. Open vim and run :PlugInstall"
+echo "Then run chsh -s /bin/zsh and restart your terminal"
 
