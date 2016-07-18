@@ -11,6 +11,11 @@ set nocompatible
 " Generals
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" Color - find in in ~/.vim/colors
+set t_Co=256
+color wombat256mod
+
+
 " Copy to the system cliboard.
 " This won't work if :echo ('clipboard') returns 0, which is the
 " case if you just apt-get vim.
@@ -51,7 +56,7 @@ set history=100
 " In case you change this file, in order to avoid reopening
 " all your open files, just run <Leader>v and you will see 
 " the new options
-map <Leader>v : source ~/.vimrc
+map <Leader>v :source ~/.vimrc
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -129,3 +134,11 @@ if filereadable(expand("~/.vimrc.bundles"))
 endif
 
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Key mappings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Move vertically by visual line
+" In case a line is wrapped to two lines, don't miss the wrapped text
+nnoremap j gj
+nnoremap k gk
