@@ -39,8 +39,8 @@ else
     echo ".vimrc.bundles file not found. You will be missing vim plugins"
 fi
 
-if [[ -f wombat256.vim ]]; then
-    cp wombat256.vim $HOME/.vim/colors
+if [[ -f wombat256mod.vim ]]; then
+    cp wombat256mod.vim $HOME/.vim/colors
 else
     echo "wombat256.vim file not found. You will be missing vim plugins"
 fi
