@@ -33,13 +33,13 @@ else
     echo ".vimrc file not found."
 fi
 
-if [[ -f .vimrc.bundles ]] then
+if [[ -f .vimrc.bundles ]]; then
     cp .vimrc.bundles $HOME/
 else
     echo ".vimrc.bundles file not found. You will be missing vim plugins"
 fi
 
-if [[ -f wombat256.vim ]] then
+if [[ -f wombat256.vim ]]; then
     cp wombat256.vim $HOME/.vim/colors
 else
     echo "wombat256.vim file not found. You will be missing vim plugins"
