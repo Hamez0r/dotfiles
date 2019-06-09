@@ -7,7 +7,8 @@
 # https://github.com/hamez0r/dotfiles.git
 # in their required locations.
 # When this script has finish, in order to install all Vim's plugins,
-# fire up Vim and run :PlugInstall
+# fire up Vim and run :PlugInstall.
+# Then, configure iTerm.
 ###############################################################################
 
 # Create $HOME/.vim/autoload, including parents if they don't exist.
@@ -55,11 +56,11 @@ fi
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Install POWERLEVEL9K
-git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+git clone https://github.com/bhilburn/powerlevel9k.git $HOME/.oh-my-zsh/custom/themes/powerlevel9k
 
-cp ./.zshrc ~/.zshrc
+cp ./.zshrc $HOME/.zshrc
 
 echo "Install completed. Open vim and run :PlugInstall"
 echo "Then run chsh -s /bin/zsh and restart your terminal"
-echo "Configure iTerm to use the font and theme."
+echo "Configure iTerm to use the font and theme"
 
