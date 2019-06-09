@@ -54,6 +54,11 @@ fi
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+# Install POWERLEVEL9K
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+
+cp ./.zshrc ~/.zshrc
+
 echo "Install completed. Open vim and run :PlugInstall"
 echo "Then run chsh -s /bin/zsh and restart your terminal"
 
