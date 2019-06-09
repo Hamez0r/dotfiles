@@ -61,4 +61,5 @@ cp ./.zshrc ~/.zshrc
 
 echo "Install completed. Open vim and run :PlugInstall"
 echo "Then run chsh -s /bin/zsh and restart your terminal"
+echo "Configure iTerm to use the font and theme."
 
